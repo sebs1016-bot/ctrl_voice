@@ -26,7 +26,22 @@ port=1883
 client1= paho.Client("GIT-HUBCprueba")
 client1.on_message = on_message
 
-
+st.markdown("""
+<style>
+.stApp {
+    background: linear-gradient(270deg, #ff6b6b, #feca57, #48dbfb, #5f27cd);
+    background-size: 600% 600%;
+    animation: chaos 8s ease infinite;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+@keyframes chaos {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+</style>
+""", unsafe_allow_html=True)
 
 st.title("INTERFACES MULTIMODALES")
 st.subheader("CONTROL POR VOZ")
